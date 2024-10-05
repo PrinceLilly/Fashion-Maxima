@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "Strawford";
+  src: url("../fonts/strawford-bold-webfont.woff") format("woff"),
+    url("../fonts/strawford-bold-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-stye: normal;
+}
+
+@font-face {
+  font-family: "Strawford";
+  src: url("../fonts/strawford-medium-webfont.woff") format("woff"),
+    url("../fonts/strawford-medium-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-stye: normal;
+}
+
+@font-face {
+  font-family: "Strawford";
+  src: url("../fonts/strawford-regular-webfont.woff") format("woff"),
+    url("../fonts/strawford-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-stye: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Strawford", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+}
+
+/*Navbar*/
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.logo > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.gender {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-links,
+.nav-icons {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-link,
+.nav-icon {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: orangered;
+}
+.link-active {
+  text-decoration: underline;
+}
+
+/*Hero*/
+
+.hero {
+  width: 100%;
+  height: 800px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.hero-header {
+  font-size: 80px;
+  font-weight: 700;
+  bottom: 40px;
+  margin: 16px 0px;
+  line-height: 1.4;
+}
+
+.h1-fill {
+  color: #ffffff;
+  display: block;
+}
+
+.h1-outline {
+  color: transparent;
+  -webkit-text-stroke: 4px;
+  -webkit-text-stroke-color: #ffffff;
+  letter-spacing: 6.4px;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 70px;
+}
+
+.hero-btn {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 8px 20px;
+  margin-right: 18px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.items {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  width: fit-content;
+  margin: 0px 8px;
+}
+.item-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.fashion-item-name,
+.fashion-item-price {
+  font-weight: 700;
+}
+
+.luxus {
+  padding: 58px 0px;
+}
+
+.find-more-btn {
+  color: #ffffff;
+  background-color: #000;
+  padding: 8px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.find-more-btn svg {
+  margin-left: 10px;
+}
+
+.cta {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.boss-card {
+  width: 296px;
+  height: 449px;
+  padding: 120px 34px 0px;
+  background-color: #000000;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.list-item img {
+  width: 296px;
+  height: 449px;
+}
+
+.boss-card svg {
+  align-self: flex-end;
+}
+
+.layer-container {
+  display: flex;
+  justify-content: center;
+  height: 480px;
+}
+
+.layer-container img {
+  object-fit: cover;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 64px 0px;
+}
+
+footer h2 {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 64px 0px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  font-size: 14px;
+  margin: 20px 32px;
+  line-height: 1.68;
+}
+
+.links-title {
+  margin-bottom: 16px;
+  color: #b2b2b2;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #cbcbcb;
+}
+
+.copyright {
+  color: #b2b2b2;
+  margin-top: 96px;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 0px) {
+  .items {
+    justify-content: space-around;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) {
+  .items {
+    justify-content: space-between;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1280px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1536px) {
+}
